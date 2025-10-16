@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Gratis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo-pagina">PELICULAS GRATIS EN HD</h1>
+    </header>
+    <!-- BOTONES DE CATEGORÍAS MÁS GRANDES -->
+    <nav class="filtros">       
+        <button class="filtro-btn activo" data-categoria="todas">TODAS</button>
+        <button class="filtro-btn" data-categoria="accion">ACCIÓN Y CIENCIA FICCIÓN</button>
+        <button class="filtro-btn" data-categoria="aventura">AVENTURA Y FANTASÍA</button>
+        <button class="filtro-btn" data-categoria="comedia">COMEDIA</button>
+        <button class="filtro-btn" data-categoria="terror">TERROR Y SUSPENSO</button>
+        <button class="filtro-btn" data-categoria="animacion">ANIMACIÓN</button>
+        <button class="filtro-btn" data-categoria="series">SERIES</button>
+    </nav>  
+    <main class="peliculas">
+        <!-- PELÍCULAS ORIGINALES -->
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://www.mubis.es/media/articles/2433/23700/poster-espanol-de-el-hombre-de-acero-original.jpg" class="movie-poster">
+            <h3 class="movie-title">El Hombre de Acero</h3> 
+            <a href="https://www.youtube.com/embed/7ELZfyv0exQ?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a>
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://assets.mycast.io/posters/batman-vs-superman-1989-fan-casting-poster-243447-medium.jpg?1664615199" class="movie-poster">
+            <h3 class="movie-title">Batman vs Superman</h3> 
+            <a href="https://www.youtube.com/embed/U-uQKAHr_Vs?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a>
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.Zm7gsQlPGmRrt4xaZxZg9QHaJ4?cb=thfvnext&w=620&h=827&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">Liga de la Justicia</h3> 
+            <a href="https://www.youtube.com/embed/VFNx6gTYpeI?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a>
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.pinimg.com/736x/2a/77/50/2a7750d1f3907c86a8ec16e0ec8699ea.jpg" class="movie-poster">
+            <h3 class="movie-title">Mujer Maravilla</h3> 
+            <a href="https://www.youtube.com/embed/9Xs-RlRsTnQ?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a>
+        </div> 
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_FMjpg_UX1000_.jpg" class="movie-poster">
+            <h3 class="movie-title">Aquaman</h3> 
+            <a href="https://www.youtube.com/embed/HNt1HLlHgvI?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a>
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.ytimg.com/vi_webp/QLOc781EzQA/movieposter_es-419.webp" class="movie-poster" >
+            <h3 class="movie-title">El Caballero de la Noche</h3> 
+            <a href="https://www.youtube.com/embed/QLOc781EzQA?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2020/09/poster-batman-2021-2064381.jpg?itok=Q1wMuVul" class="movie-poster" >
+            <h3 class="movie-title">The Batman</h3> 
+            <a href="https://www.youtube.com/embed/DQR5Wmefh7M?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.nPVlv1JNux6t10JaOfAGSgHaLH?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">300</h3> 
+            <a href="https://www.youtube.com/embed/RPhhZe2URkk?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.86TppKQiJJgF9MzJjwzOYQHaLH?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">300 Parte dos</h3> 
+            <a href="https://www.youtube.com/embed/GtQ4nS_FEO4?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://es.web.img3.acsta.net/medias/nmedia/18/94/54/41/20516974.jpg" class="movie-poster" >
+            <h3 class="movie-title">Guerra Mundial Z</h3> 
+            <a href="https://www.youtube.com/embed/CSMaFGZrHjg?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.ytimg.com/vi_webp/n-KEJvzD0Nc/movieposter_es-419.webp" class="movie-poster" >
+            <h3 class="movie-title">Beekeeper</h3> 
+            <a href="https://www.youtube.com/embed/n-KEJvzD0Nc?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.ytimg.com/vi_webp/-MK6bMqGss4/movieposter_es-419.webp" class="movie-poster" >
+            <h3 class="movie-title">Justicia Implacable</h3> 
+            <a href="https://www.youtube.com/embed/-MK6bMqGss4?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.jprKHD5td24jp2i_4yya9wHaK-?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">El Hombre Gris</h3> 
+            <a href="https://www.youtube.com/embed/MoT2kKznm8k?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Video52/v4/0b/7c/28/0b7c2865-1e4e-3764-912a-0297e95215fa/HacksawRidge_ES_iTunes_Poster.jpg/1200x630bb.png" class="movie-poster" >
+            <h3 class="movie-title">Hasta el Ultimo Hombre</h3> 
+            <a href="https://www.youtube.com/embed/n6gh_CCNvCE?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://th.bing.com/th/id/R.21c1f48b9416cc7ea3df23de3ae1546e?rik=al19liS4Oug1Kg&pid=ImgRaw&r=0" class="movie-poster">
+            <h3 class="movie-title">Corazones de Hierro</h3> 
+            <a href="https://www.youtube.com/embed/hgvbWtM3HCY?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="aventura">
+            <img src="https://blimey.pro/wp-content/uploads/2021/12/interstellar-2014.jpg" class="movie-poster" >
+            <h3 class="movie-title">INTERSTELAR</h3> 
+            <a href="https://www.youtube.com/embed/K903vosh3CM?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://www.sonypictures.com.mx/sites/mexico/files/2023-04/Key-Art_1400x2100_65.jpg" class="movie-poster" >
+            <h3 class="movie-title">Hace 65 millones</h3> 
+            <a href="https://www.youtube.com/embed/GajYOOPHPBA?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://image.tmdb.org/t/p/original/tzp6VzED2TBc02bkYoYnQa6r2OK.jpg" class="movie-poster" >
+            <h3 class="movie-title">La Guerra del Mañana</h3> 
+            <a href="https://www.youtube.com/embed/zvSQpdiW3Io?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton" >VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.wgOotAOgclEbDERXF8cdSQHaKe?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Blade Runner</h3> 
+            <a href="https://www.youtube.com/embed/T1mJrQ3N8vI?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.DRaGiRC10lSDxc1GyBNNuQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">El Abismo Secreto</h3> 
+            <a href="https://www.youtube.com/embed/66pxg_ceKBw?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://moviefilmsla.wordpress.com/wp-content/uploads/2017/01/9e23c-la_gran_muralla_posterlat1_mf.jpg" class="movie-poster" >
+            <h3 class="movie-title">La Gran Muralla</h3> 
+            <a href="https://www.youtube.com/embed/m8pyylIpfqc?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.P7sIoMGJkaMDk7N9OBPwewHaJ4?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Al Filo del Mañana</h3> 
+            <a href="https://www.youtube.com/embed/XzPEobrho3o?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://images.milenio.com/UB6Ff350MMKWoQ21g6KXDJiCn8w=/375x0/uploads/media/2025/04/17/poster-oficial-titanes-pacifico-prime.jpg" class="movie-poster" >
+            <h3 class="movie-title">Titantes del Pacifico</h3> 
+            <a href="https://www.youtube.com/embed/COD911Y2M2M?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Video4/v4/f1/8d/91/f18d91e0-3ee8-685f-8b24-09ec2e4dfb25/source/1200x630bb.jpg" class="movie-poster" >
+            <h3 class="movie-title">El Reino de los Cielos</h3> 
+            <a href="https://www.youtube.com/embed/Ruh7C0O17RI?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://refstatic.sk/movie/00ed950e4926be4d71ed.jpg?is=400x600c&c=2w&s=2f664deca785c96cf063a32a9be48771d6ffe5933825d2d1cd5ad2727b45575f" class="movie-poster" >
+            <h3 class="movie-title">Legitimo Rey</h3> 
+            <a href="https://www.youtube.com/embed/IqtuYGPTQqk?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.ytimg.com/vi_webp/yEfychD8U84/movieposter_es-419.webp" class="movie-poster" >
+            <h3 class="movie-title">El Hombre del Norte</h3> 
+            <a href="https://www.youtube.com/embed/yEfychD8U84?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.RKVuT6d-m1o1TZzA72MIggHaLB?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">La Falla de San Andres</h3> 
+            <a href="https://www.youtube.com/embed/HWjC4K_sWuo?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.ytimg.com/vi_webp/zh4yArS2HPE/movieposter_es-419.webp" class="movie-poster" >
+            <h3 class="movie-title">TENET</h3> 
+            <a href="https://www.youtube.com/embed/zh4yArS2HPE?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.nUeu0q1iK-fC-WLAdh5w-QAAAA?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Robot Salvaje</h3> 
+            <a href="https://www.youtube.com/embed/qESSnpjkRz0?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.60kWmsm2NLokv35h7neJBQAAAA?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">CORALINE</h3> 
+            <a href="https://www.youtube.com/embed/Tc57qtg9Thc?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://media.port.hu/images/001/558/802.webp" class="movie-poster" >
+            <h3 class="movie-title">Rambo 1</h3> 
+            <a href="https://www.youtube.com/embed/aKfe_monqrA?fs=1" class="boton">VER EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://images.justwatch.com/poster/173817500/s718/rambo-ii-a-missao.jpg" class="movie-poster" >
+            <h3 class="movie-title">Rambo 2</h3> 
+            <a href="" class="boton">PRONTO EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://image.tmdb.org/t/p/original/3SKg3XKEyNSZ2oAba3Ucfr0Sxw0.jpg" class="movie-poster" >
+            <h3 class="movie-title">Rambo 3</h3> 
+            <a href="https://www.youtube.com/embed/Zeu_5gbNEIU?fs=1" class="boton">VER EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://m.media-amazon.com/images/I/A12zNza5GKL.jpg" class="movie-poster" >
+            <h3 class="movie-title">Rambo 4 Regreso al Infierno</h3> 
+            <a href="" class="boton">PRONTO EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://image.tmdb.org/t/p/original/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg" class="movie-poster" >
+            <h3 class="movie-title">Rambo Last Blood</h3> 
+            <a href="https://www.youtube.com/embed/eSD5sk9K8Gs?fs=1" class="boton">VER EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://images.justwatch.com/poster/250434924/s718/kickboxer.%7Bformat%7D" class="movie-poster" >
+            <h3 class="movie-title">Kickboxer</h3> 
+            <a href="https://www.youtube.com/embed/m7P0iRPm06A?fs=1" class="boton">VER EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://images.justwatch.com/poster/288768718/s718/contacto-sangriento.jpg" class="movie-poster" >
+            <h3 class="movie-title">Contacto Sangriento</h3> 
+            <a href="https://www.youtube.com/embed/wYqObQfyRO8?fs=1" class="boton">VER EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://th.bing.com/th/id/R.beec628fc8f591064486849a369c6b47?rik=KHlu0HLybvqfBA&pid=ImgRaw&r=0" class="movie-poster" >
+            <h3 class="movie-title">Depredador 1987</h3> 
+            <a href="https://www.youtube.com/embed/Fy4Jr1VNmKA?fs=1" class="boton">VER EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.pinimg.com/736x/7d/19/84/7d1984bb3a25928a3bb99bc353051653.jpg" class="movie-poster" >
+            <h3 class="movie-title">El Vengador del Futuro</h3> 
+            <a href="https://www.youtube.com/embed/XdW0NG6XTno?fs=1" class="boton">VERN EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://images.plex.tv/photo?size=large-720&scale=2&url=https:%2F%2Fmetadata-static.plex.tv%2F2%2Fgracenote%2F2aad7e2270ff7134eec002470aaec851.jpg" class="movie-poster" >
+            <h3 class="movie-title">Comando Arnold</h3> 
+            <a href="https://www.youtube.com/embed/CefnY2_i1i8?fs=1" class="boton">VER EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://musicimage.xboxlive.com/catalog/video.movie.8D6KGWZL5J98/image?locale=en-nz&w=1000&h=1400&purposes=BoxArt" class="movie-poster" >
+            <h3 class="movie-title">Avatar 1</h3> 
+            <a href="https://www.youtube.com/embed/TZNOLLsgDww?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://usercontent.one/wp/www.thuisleven.com/wp-content/uploads/2022/11/Avatar-The-Way-of-Water-de-nieuwe-Disney-film.jpg" class="movie-poster" >
+            <h3 class="movie-title">Avatar 2</h3> 
+            <a href="https://www.youtube.com/embed/ZYsT5VwtVxY?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="aventura">
+            <img src="https://th.bing.com/th/id/R.4de5ac6df4d2b7f84f72abba31d74cd9?rik=RBRpPw%2bbMzPolA&pid=ImgRaw&r=0" class="movie-poster" >
+            <h3 class="movie-title">El Rey Leon </h3> 
+            <a href="https://www.youtube.com/embed/xp9wrbgx1tk?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="aventura">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.J8SDOJgivvYH5CVHgp_qdgHaKl?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Mufasa el Rey Leon</h3> 
+            <a href="https://www.youtube.com/embed/h4_M-LC0jtc?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="aventura">
+            <img src="https://images.justwatch.com/poster/205863374/s718/epic-el-mundo-secreto.%7Bformat%7D" class="movie-poster" >
+            <h3 class="movie-title">El Reino Secreto</h3> 
+            <a href="https://www.youtube.com/embed/n31IrbZNJ6c?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.oD4XnHdZBD--SdiyU4qLHQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Los Vengadores </h3> 
+            <a href="https://www.youtube.com/embed/qiSKJ79QH1M?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.p3XXhjlpNQs581851jOGZwHaKb?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Los Vengadores - Ultron</h3> 
+            <a href="https://www.youtube.com/embed/ZgXaeW_c9gw?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.-dEyxyzMz44M8MERUZethAHaKe?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Vengadores Infinity War</h3> 
+            <a href="https://www.youtube.com/embed/5C0fm1jWttw?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.JBeWjzqt0XefIFd04jLHfwHaLM?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Vengadores End Game</h3> 
+            <a href="https://www.youtube.com/embed/QXt1zRjzO9Y?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://play-lh.googleusercontent.com/0zfg6r-YjqLpm2gdWwplLD3RJAKbiTv1mvFw7d9gLu3L67fT4gcETrLQFCw8PmNHu3rgxAy2MUj-TImcTQ" class="movie-poster" >
+            <h3 class="movie-title">El Gato Con Botas </h3>
+            <a href="https://www.youtube.com/embed/egUnggWzs2k?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://i.pinimg.com/originals/49/ad/e8/49ade87cab2c0e333bb1baf81da2dc3e.jpg" class="movie-poster" >
+            <h3 class="movie-title">El Hombre Araña </h3>
+            <a href="https://www.youtube.com/embed/8KTVVtpsz0Y?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://i.pinimg.com/736x/4a/07/0a/4a070a52a2393a29a02b9e80fe3b326b.jpg" class="movie-poster" >
+            <h3 class="movie-title">El Hombre Araña 2 </h3>
+            <a href="https://www.youtube.com/embed/Xky2Z8R-QA8?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://th.bing.com/th/id/R.d4dff2964b29ee42325fe9ef1de66561?rik=vPNWI%2bQlE9%2bKbw&pid=ImgRaw&r=0" class="movie-poster" >
+            <h3 class="movie-title">El Hombre Araña 3 </h3>
+            <a href="https://www.youtube.com/embed/w0dm0ktxU1U?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.SFHzJwFvp_OOb9cgoC6PygAAAA?cb=12&w=405&h=600&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Napoleon </h3>
+            <a href="https://www.youtube.com/embed/1y6MwJlxUmc?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.qHvDJtkkV7TkdoUiCn2WDAHaLH?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Redy Player One </h3>
+            <a href="https://www.youtube.com/embed/w_enC14IXj0?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion aventura">
+            <img src="https://www.informador.mx/__export/1739397082528/sites/elinformador/img/2025/02/12/cxmo_entrenar_a_a_tu_dragxn_poster.jpg_524400468.jpg" class="movie-poster" >
+            <h3 class="movie-title">Dragon Live Action</h3> 
+            <a href="https://www.youtube.com/embed/YUMBryuXVLM?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://play-lh.googleusercontent.com/8wP-vaGZKK9PlxUhZR0C3rgiibLhaLwAL37KuHqCNXc1mtipnd2-VgdnC5xVRqlmqeaK" class="movie-poster" >
+            <h3 class="movie-title">Jurassic World 1</h3> 
+            <a href="https://www.youtube.com/embed/uu4VaJCwO4Q?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://image.tmdb.org/t/p/original/yHa2I7qxZvZUASLHrIR8vQLmZ4B.jpg" class="movie-poster" >
+            <h3 class="movie-title">Jurassic World 2</h3> 
+            <a href="https://www.youtube.com/embed/uDcmx662EjE?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.C-U3yB-AB6nQUd1F6GplJAAAAA?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Jurassic Parck 3</h3> 
+            <a href="https://www.youtube.com/embed/If_I5PVaUZE?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://www.filmofilia.com/wp-content/uploads/2025/05/Jurassic-World-Rebirth-Poster-1-5.jpg" class="movie-poster" >
+            <h3 class="movie-title">Jurassic Parck 4</h3> 
+            <a href="https://www.youtube.com/embed/WwUxAUXy3Dg?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://thafd.bing.com/th/id/OIP.LMNq9se4kiu96aKX0LpikAHaLH?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Alien Covenant</h3> 
+            <a href="https://www.youtube.com/embed/c1JJAcBv47A?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.etsystatic.com/54436340/r/il/8893cd/6246189114/il_1080xN.6246189114_d594.jpg" class="movie-poster">
+            <h3 class="movie-title">Alien Romulus</h3> 
+            <a href="https://www.youtube.com/embed/bTtce_AQnxE?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://pics.filmaffinity.com/Predator_La_presa-405480796-large.jpg" class="movie-poster">
+            <h3 class="movie-title">Depredador la Presa</h3> 
+            <a href="https://www.youtube.com/embed/a8kVqjZxFHI?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.4QPVswQYglWD6mtnVjRx-wHaKk?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Cazador de Asesinos</h3> 
+            <a href="https://www.youtube.com/embed/9r-3_SsDxaQ?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://images.justwatch.com/poster/74659445/s718" class="movie-poster">
+            <h3 class="movie-title">Soy Leyenda</h3> 
+            <a href="https://www.youtube.com/embed/q5TjplPcWmQ?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.9CFdxyp8DXNQPRXc7NIMdwHaK9?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Tyler Rake 1</h3> 
+            <a href="https://www.youtube.com/embed/BmY9JimgZ4I?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://www.ecranlarge.com/content/uploads/2023/06/tyler-rake-2-photo-1480758.jpg" class="movie-poster" >
+            <h3 class="movie-title">Tyler Rake 2</h3> 
+            <a href="https://www.youtube.com/embed/Cqxx9XJlEyk?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.Da0tQOUzpwUTvOxppAMpKQHaLH?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Entrenando tu Dragon 1 </h3> 
+            <a href="https://www.youtube.com/embed/ykqQ2Qhjvjw?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://3.bp.blogspot.com/-SbRvAZO8PaE/Uo5A6XgFQAI/AAAAAAAA7ww/Eovgncy-VNc/s1600/COMO+ENTRENAR+A+TU+DRAGON+2.jpg" class="movie-poster" >
+            <h3 class="movie-title">Entrenando tu Dragon 2 </h3> 
+            <a href="https://www.youtube.com/embed/1lAY2DAYVpA?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.wpGgCmdYCf7nXSEvuoQ0DgHaKe?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Entrenando tu Dragon 3</h3> 
+            <a href="https://www.youtube.com/embed/kyeHOXkKUD8?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="comedia">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/7b86f2a7e80941d97c265348873a82c73450c0286ed1d1eeb7d86440ec707de5.jpg" class="movie-poster" >
+            <h3 class="movie-title">Son Como Niños 1</h3> 
+            <a href="https://www.youtube.com/embed/psdRxtdVpvg?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="comedia">
+            <img src="https://play-lh.googleusercontent.com/c-aFh5FX2TZ_pkXK-svSmZ2HkY3VT0_TBhE1Fwua0_rlN5_7HCZSOwJXvWyL_KlVvyY" class="movie-poster" >
+            <h3 class="movie-title">Son Como Niños 2</h3> 
+            <a href="https://www.youtube.com/embed/zpLN4WYpIHs?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://www.ecured.cu/images/9/98/Lluvia_De_Hamburguesas.jpg" class="movie-poster" >
+            <h3 class="movie-title">Lluvia de Amburguesas</h3>     
+            <a href="https://www.youtube.com/embed/XA-tdT1W0gs?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.rSONJHvoeBoqXvGRMVwTpAHaKk?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Lluvia de Amburguesas</h3> 
+            <a href="https://www.youtube.com/embed/a3AeXYaLgCg?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="comedia">
+            <img src="https://images.plex.tv/photo?size=large-480&scale=2&url=https:%2F%2Fmetadata-static.plex.tv%2Fd%2Fgracenote%2Fd9d546cf4cae8ce9953d549d649fbe63.jpg" class="movie-poster" >
+            <h3 class="movie-title">Baywatch</h3> 
+            <a href="https://www.youtube.com/embed/t_lwDSl0ykA?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/3b274b44986f0b3793369a81010644496dc7da20de16e3b13ea2caf64a1ed042.jpg" class="movie-poster" >
+            <h3 class="movie-title">La Era de Hielo 1</h3> 
+            <a href="https://www.youtube.com/embed/iAi7leeZbJs?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://image.tmdb.org/t/p/original/s0GVfNjiPixSVctc4TLowUqZiCa.jpg" class="movie-poster" >
+            <h3 class="movie-title">La Era de Hielo 2</h3> 
+            <a href="https://www.youtube.com/embed/ygKzScXuaOM?start=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.bEISfVPNHYBEpGeKoU2B2gAAAA?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">La Era de Hielo 3</h3> 
+            <a href="https://www.youtube.com/embed/G9rcoam2Xhk?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.X2xiGbjm03G8LxEGPkVe5gHaK_?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">La Era de Hielo 4</h3> 
+            <a href="https://www.youtube.com/embed/nUo_Dn3Qxpc?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://1.bp.blogspot.com/-YeSrnEWW2ik/YC64wv9ByFI/AAAAAAAADRM/f7Oj_gsVRoAzUoDpybumJhzRFlw5W1z7gCLcBGAsYHQ/s2048/EH5.jpg" class="movie-poster" >
+            <h3 class="movie-title">La Era de Hielo 5</h3> 
+            <a href="https://www.youtube.com/embed/9l4kCGvruKw?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.pinimg.com/originals/bc/59/ea/bc59eaec7ecc2d208c852cc2a4127ef3.jpg" class="movie-poster" >
+            <h3 class="movie-title">Kon la Isla Calavera</h3> 
+            <a href="https://www.youtube.com/embed/zfXgZtVi9_4?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.ytimg.com/vi_webp/sI4edNBavbQ/movieposter_es-419.webp" class="movie-poster" >
+            <h3 class="movie-title">Godzilla 1</h3> 
+            <a href="https://www.youtube.com/embed/sI4edNBavbQ?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.ytimg.com/vi_webp/YjlT142LsIs/movieposter_es-419.webp" class="movie-poster" >
+            <h3 class="movie-title">Godzilla 2</h3> 
+            <a href="https://www.youtube.com/embed/YjlT142LsIs?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/godzilla-vs-kong-poster.jpg" class="movie-poster" >
+            <h3 class="movie-title">Godzilla vs Kong</h3> 
+            <a href="https://www.youtube.com/embed/ayQnIrHTq4c?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://image.tmdb.org/t/p/original/3Po4Ln1ut9g2rIEh5PkVvb7Aoj1.jpg" class="movie-poster" >
+            <h3 class="movie-title">Godzilla x Kong Imperio</h3> 
+            <a href="https://www.youtube.com/embed/qFw02Kol1so?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion aventura">
+            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/sharedimages/2024/12/superman-2025-official-poster-1.jpeg" class="movie-poster" >
+            <h3 class="movie-title">SUPERMAN</h3> 
+            <a href="https://www.youtube.com/embed/6o_F1ZZl1sw?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://catalogodepeliculas.com/wp-content/uploads/2020/03/the_incredibles-939387273-large-768x1138.jpg" class="movie-poster" >
+            <h3 class="movie-title">Los Increibles 1</h3> 
+            <a href="https://www.youtube.com/embed/r_9sJ2CrJTc?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aTbRJHCrQwceSS5b8LYj7hC654I.jpg" class="movie-poster" >
+            <h3 class="movie-title">Los Increibles 2</h3> 
+            <a href="https://www.youtube.com/embed/rxGfQwn7WeE?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ea91411d699119344628225ca3e6441cd2fa1ea0b30e9090429d2a2630ae6a79._RI_TTW_.jpg" class="movie-poster" >
+            <h3 class="movie-title">Los Tipos Malos 1</h3> 
+            <a href="https://www.youtube.com/embed/FjaZCV-6GSQ?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://images.justwatch.com/poster/331140680/s718/the-bad-guys-2.jpg" class="movie-poster" >
+            <h3 class="movie-title">Los Tipos Malos 2</h3> 
+            <a href="https://www.youtube.com/embed/uXBQWzuZXNM?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>  
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Wj8SgytMzFyuwLOu5-pCpwAAAA?cb=12&w=474&h=711&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Kung Fu Panda 1</h3> 
+            <a href="https://www.youtube.com/embed/3uoOG5otOSU?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://th.bing.com/th/id/R.d90767178c869d28524a6646e036188a?rik=NQ2Fd8ot%2boqwow&pid=ImgRaw&r=0" class="movie-poster" >
+            <h3 class="movie-title">Kung Fu Panda 2</h3> 
+            <a href="https://www.youtube.com/embed/_0AVyK26dwA?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.UFzX6fqOM25dL0rc3Ke6eAHaKj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Kung Fu Panda 3</h3> 
+            <a href="https://www.youtube.com/embed/2d9mQGTZWi4?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://i.pinimg.com/736x/36/70/cf/3670cfa0233b2fca7771814d59a3a2ae--cartoon-characters.jpg" class="movie-poster" >
+            <h3 class="movie-title">RANGO</h3> 
+            <a href="https://www.youtube.com/embed/dtN2gExQDq0?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://3.bp.blogspot.com/-QzdW7NDPeyI/Vx52aystU2I/AAAAAAAAAIg/lV8_SmNCj94nneaGkHRvJm3SKleAydtAwCLcB/s1600/13006457_1718456568401407_8303711238013247488_n.jpg" class="movie-poster" >
+            <h3 class="movie-title">Un gran Dinosaurio</h3> 
+            <a href="https://www.youtube.com/embed/RNuth916rn4?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="aventura">
+            <img src="https://www.ecartelera.com/images/img/238000/238050_f1-la-pelicula-de-formula-1-de-brad-pitt-lanza-.jpg" class="movie-poster" >
+            <h3 class="movie-title">F1 La pelicula</h3> 
+            <a href="https://www.youtube.com/embed/s4rUg5nqOsY?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://assets-prd.ignimgs.com/2021/08/09/dune-insta-vert-main-dom-1638x2048-1628522913715.jpg" class="movie-poster" >
+            <h3 class="movie-title">DUNE 1</h3> 
+            <a href="https://drive.google.com/file/d/1ggBR1xuMUHJaAnHhqt3K1HWbVbavWqep/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://image.tmdb.org/t/p/original/87jZEVp4FW6GwTx56mbbqIQQF75.jpg" class="movie-poster" >
+            <h3 class="movie-title">DUNE 2</h3> 
+            <a href="https://drive.google.com/file/d/1B7LdF1YEsozW35gIQIUcVFQiI3PqtngR/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.7sg017cXpCIqkt0aBQbBmQHaKd?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">SISU 1</h3> 
+            <a href="" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://es.web.img3.acsta.net/c_310_420/pictures/23/02/22/07/47/5885099.jpg" class="movie-poster" >
+            <h3 class="movie-title">SISU 2</h3> 
+            <a href="" class="boton">AUN NO AGREGADA <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.mI_aFUmhoeBWeJdOVNZMiQAAAA?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">John Wick 1</h3> 
+            <a href="" class="boton">AUN NO AGREGADO <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.XWbAXMacUoEhLaJmanw0CQHaJ4?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">John Wick 2</h3> 
+            <a href="https://drive.google.com/file/d/1__Rfo06Dn5PHe9mpHqAMzrlYgAty1E0u/view?usp=sharing" class="boton">VER PELICULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.W59dXJdhZ5jFWxErAR4EjQHaLH?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">John Wick 3</h3> 
+            <a href="https://drive.google.com/file/d/1FelSu5xJyQV5aDE97nNGIb1Bg4C2FoY0/view?usp=sharing" class="boton">VER PELICULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ftkxEjd_RfAU2OJJmYJ-ugHaKl?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">John Wick 4</h3> 
+            <a href="" class="boton">AUN NO AGREGADO <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://es.web.img2.acsta.net/img/01/52/015250cbd3a2204250f5b9e9755ed932.jpg" class="movie-poster" >
+            <h3 class="movie-title">Ballerina</h3> 
+            <a href="https://drive.google.com/file/d/1IKld5I5BKCEewaOCozMGB_F-SPD6tsNo/view?usp=sharing" class="boton">VER PELICULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.xo10f3VJDmAyE7wmVLxzYwHaKl?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Bichos</h3> 
+            <a href="https://www.youtube.com/embed/r6EggDLMlTo?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.yysDNWBee0oFijb63ThNTQHaLH?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Una Aventura en Altura</h3> 
+            <a href="https://www.youtube.com/embed/udNyNfJrJks?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/eVt6IKkzKqNs80TX0JVan6sjH5Z.jpg" class="movie-poster" >
+            <h3 class="movie-title">Valiente</h3> 
+            <a href="https://www.youtube.com/embed/zoBoxGlSAc0?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.jXQ43rcNi8qYLKl3gJu8lAHaKj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">El Lorax</h3> 
+            <a href="https://www.youtube.com/embed/y8Ne0R4bPu8?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://www.aceprensa.com/wp-content/uploads/2011/01/38757-0.jpg" class="movie-poster" >
+            <h3 class="movie-title">Enredados</h3> 
+            <a href="https://www.youtube.com/embed/8Rr-k9Vzrew?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://3.bp.blogspot.com/-B5nY-M3TbnI/Ts9hZxAmqHI/AAAAAAAAEKE/YgAPAtYxW0s/s1600/tintin-secret-of-the-unicon-1.jpg" class="movie-poster" >
+            <h3 class="movie-title">Tin Tin</h3> 
+            <a href="https://www.youtube.com/embed/3N_M4NteJdo?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/1c51fc12-ccf3-48d5-b6ff-d960b7d50191/960x960" class="movie-poster" >
+            <h3 class="movie-title">Nueve</h3> 
+            <a href="https://www.youtube.com/embed/zkP68Ze1I8M?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://goldenglobes.com/wp-content/uploads/2023/10/Spider-Man-Into-the-Spider-Verse.jpg" class="movie-poster" >
+            <h3 class="movie-title">Spider Verse 1</h3> 
+            <a href="https://www.youtube.com/embed/JDzJ600qtkE?fs=1" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://i.pinimg.com/originals/da/43/ea/da43ea9387e7d3c818b5b0c4bcfa365e.jpg" class="movie-poster" >
+            <h3 class="movie-title">Spider Verse 2</h3> 
+            <a href="https://www.youtube.com/embed/mED1iOpvgWM?fs=1" class="boton">VER EN EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://es.web.img3.acsta.net/pictures/23/05/25/12/51/1471399.jpg" class="movie-poster" >
+            <h3 class="movie-title">Tortugas Ninja</h3> 
+            <a href="https://www.youtube.com/embed/vSTLoauhAhA?fs=1" class="boton"> EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://i.pinimg.com/originals/5d/5b/c5/5d5bc50c0066a01d7d3d5b99ccb19086.jpg" class="movie-poster" >
+            <h3 class="movie-title">King Kon</h3> 
+            <a href="https://www.youtube.com/embed/ErfDCfWRsls?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://image.tmdb.org/t/p/original/3gIO6mCd4Q4PF1tuwcyI3sjFrtI.jpg" class="movie-poster" >
+            <h3 class="movie-title">Rampage</h3> 
+            <a href="https://www.youtube.com/embed/Et3l3KtDZt8?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.dK82OQsDSmAxlAlMB2EuZAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Resistencia</h3> 
+            <a href="https://www.youtube.com/embed/wc6Chtd0mBI?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="terror">
+            <img src="https://www.pantalla90.es/wp-content/uploads/2011/10/fGb1H2VlTUxUBlDH4wlbpU9UyHN.jpg" class="movie-poster" >
+            <h3 class="movie-title">La Cosa</h3> 
+            <a href="https://www.youtube.com/embed/QUSAkE4I4j0?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="terror">
+            <img src="https://thfvnext.bing.com/th/id/OIP.74xdHJedf46CWcBn4XYhXwHaKj?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">La Bruja</h3> 
+            <a href="https://www.youtube.com/embed/bnUpuBE4TX8?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://thekoalamom.com/wp-content/uploads/2015/06/the-croods.jpg" class="movie-poster">
+            <h3 class="movie-title">Los Crods 1</h3> 
+            <a href="https://www.youtube.com/embed/CYyXtaiAVHI?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/the-croods-a-new-age/images/regions/ar/onesheet.jpg" class="movie-poster">
+            <h3 class="movie-title">Los Crods 2</h3> 
+            <a href="https://www.youtube.com/embed/1VJIfORz1Cs?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://thfvnext.bing.com/th/id/OIP.UBV8yyrr8f6EtDYtk0Q1GQAAAA?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">La familia Mitchell</h3> 
+            <a href="https://www.youtube.com/embed/gMgIYZRzB6c?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion aventura">
+            <img src="https://thfvnext.bing.com/th/id/OIP.wBKwlh8k3GXFFYvqvqrwkAHaLH?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Narnia</h3> 
+            <a href="https://www.youtube.com/embed/7jw2r_L3Br8?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="aventura">
+            <img src="https://images.justwatch.com/poster/175280547/s718/caminando-entre-dinosaurios.%7Bformat%7D" class="movie-poster" >
+            <h3 class="movie-title">Dinosaurios</h3> 
+            <a href="https://www.youtube.com/embed/rFPevrx49O8?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="terror">
+            <img src="https://thfvnext.bing.com/th/id/OIP.s13idCmoNQIwIp7RlLTbwAHaJ4?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Hereditary</h3> 
+            <a href="https://www.youtube.com/embed/pwZ5FjyG3z4?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="terror">
+            <img src="https://thfvnext.bing.com/th/id/OIP.ig4HihosgDhfmV0U_KOupgHaKb?o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Barbarian</h3> 
+            <a href="https://www.youtube.com/embed/dtC92UZ3Q6Q?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="terror">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.3hYCqJxM0FRRJ7ED-sdIdAHaKk?rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Nadie Podra Salvarte</h3> 
+            <a href="https://www.youtube.com/embed/YjVs-zkAGvw?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="terror">
+            <img src="https://1.bp.blogspot.com/-ylxeDo5s07s/X_E9sDebnvI/AAAAAAAACSo/aKONPubtExkUwnclfQJLsnjUt-6VdcMZwCLcBGAsYHQ/s2048/89.jpg" class="movie-poster" >
+            <h3 class="movie-title">La Purga</h3> 
+            <a href="https://www.youtube.com/embed/0U0S9Nogw6s?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion aventura">
+            <img src="https://assets.mycast.io/posters/uncharted-recast-fan-casting-poster-156625-large.jpg?1640696479" class="movie-poster" >
+            <h3 class="movie-title">Uncharted</h3> 
+            <a href="https://www.youtube.com/embed/KuQNDq1QtHs?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.zaMtzo4s-YrsOkOWJqBiKwHaK8?cb=thfvnext&w=1050&h=1551&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Transformers ONE</h3> 
+            <a href="https://www.youtube.com/embed/CFtTCrWTZdY?autoplay=1&fs=1&rel=0&modestbranding=1&controls=1&playsinline=0" class="boton">VER EN 4K <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUxOTUzODQyM15BMl5BanBnXkFtZTcwNDk3NzYxMQ@@._V1_.jpg" class="movie-poster" >
+            <h3 class="movie-title">Spirit</h3> 
+            <a href="https://drive.google.com/file/d/1vzETZTHbEByj3MqvlGK9eAC9kd686zlZ/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://www.lahiguera.net/cinemania/pelicula/4379/home-cartel-6062.jpg" class="movie-poster" >
+            <h3 class="movie-title">Home</h3> 
+            <a href="https://drive.google.com/file/d/1T1pw91cv_gBDOwyye1OkiIQOEPmu-UZU/view?usp=sharing" class="boton">VER PELICULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://funxd.site/wp-content/uploads/2021/04/Bambi-1942-DiamondEdition-poster-300.jpg" class="movie-poster" >
+            <h3 class="movie-title">Bambi 1</h3> 
+            <a href="https://drive.google.com/file/d/1AxupNkZ0FwAzJEMPCtIfhbYEdzdPNiEg/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://image.tmdb.org/t/p/original/sIhTXgZjBSvW0B0BtTz0hvCrrH.jpg" class="movie-poster" >
+            <h3 class="movie-title">Bambi 2</h3> 
+            <a href="https://drive.google.com/file/d/1JZ5AwDEOlVdtX2k9Xef9LJHvp-rBiMhd/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://tse4.mm.bing.net/th/id/OIP._tGqqTb_jCJhm0mjDO2m9wHaLH?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Aladar</h3> 
+            <a href="https://drive.google.com/file/d/1M70adN9lBmLlbAzMFvtmdOwh61YtXm9D/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="aventura">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.XH80zrW9vPwrH1iVHQ2NiAHaLH?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Arthur</h3> 
+            <a href="https://drive.google.com/file/d/1kux0yxGpXvJSUvIJnTKkfNJHYlVLbbSL/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="terror">
+            <img src="https://www.informador.mx/__export/1755708173439/sites/elinformador/img/2025/08/20/whatsapp_image_2025-08-20_at_10_40_07_am.jpg_323072890.jpg" class="movie-poster" >
+            <h3 class="movie-title">Desaparición</h3> 
+            <a href="https://drive.google.com/file/d/1Ufb3K14Pep9VghF1w2d-JswR10j49NqF/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="animacion">
+            <img src="https://www.sdpnoticias.com/resizer/gTxZQY_ZBuVJzYoPpLGMCfjOKFw=/1280x1900/filters:format(jpg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/sdpnoticias/FFG47VYGMFGDTOVJAKWS4OQU3I.jpeg" class="movie-poster" >
+            <h3 class="movie-title">La Casa</h3> 
+            <a href="https://drive.google.com/file/d/1HhIJF4_iRnDm9cGRCxDVrrvlrJEcQSBk/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="accion">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.i-ujSbqARpbDvV9cGO6gJAHaK-?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Thunderbolts</h3> 
+            <a href="https://drive.google.com/file/d/1JDog6yudsqBL6kMsXLjkyEOoUsakYtW_/view?usp=sharing" class="boton">VER PELÍCULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+        <div class="movie-card" data-categoria="comedia">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.iwyxVwHbzj-W98GE_LNFJgHaLE?rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster" >
+            <h3 class="movie-title">Donde Estan Las Rubias</h3> 
+            <a href="https://drive.google.com/file/d/1XcxtYVd8xKrLby8ToYCVhTMPk3DglEb3/view?usp=sharing" class="boton">VER PELICULA EN HD <i class="fas fa-play"></i></a> <!-- Ícono añadido -->
+        </div>
+
+        <!-- NUEVAS SERIES - EJEMPLOS -->
+        <!-- Serie con 1 temporada -->
+        <div class="serie-card" data-categoria="series" onclick="abrirModal('squidgame')">
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.nz1t1s6r2YCq4cqh6dw1egHaKY?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">El Juego del Calamar</h3>
+            <button class="boton-serie">VER SERIE <i class="fas fa-play"></i></button>
+        </div>
+        <!-- Serie con 2 temporadas -->
+        <div class="serie-card" data-categoria="series" onclick="abrirModal('breakingbad')">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ig27UFO6kA5SuItlwe3C4gHaJ4?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">Los Elegidos</h3>
+            <button class="boton-serie">VER SERIE <i class="fas fa-play"></i></button>
+        </div>
+        <div class="serie-card" data-categoria="series" onclick="abrirModal('breakingbad')">
+            <img src="https://assets.mycast.io/posters/arcane-fan-casting-poster-188205-medium.jpg?1650741102" class="movie-poster">
+            <h3 class="movie-title">ARCANE</h3>
+            <button class="boton-serie">VER SERIE <i class="fas fa-play"></i></button>
+        </div>
+        <div class="serie-card" data-categoria="series" onclick="abrirModal('breakingbad')">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.K45_PxSqzx2-6nwSZpLPGQAAAA?cb=12&w=300&h=408&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">La Vida en Nuestro Planeta</h3>
+            <button class="boton-serie">VER SERIE <i class="fas fa-play"></i></button>
+        </div>
+        <div class="serie-card" data-categoria="series" onclick="abrirModal('breakingbad')">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.5W3fezjJNG6snitYDR8iRQAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">Predadores</h3>
+            <button class="boton-serie">VER SERIE <i class="fas fa-play"></i></button>
+        </div>
+        <div class="serie-card" data-categoria="series" onclick="abrirModal('breakingbad')">
+            <img src="https://cinebuzz.com.br/wp-content/uploads/2025/01/alien_earth_season1.png" class="movie-poster">
+            <h3 class="movie-title">Alien Earth</h3>
+            <button class="boton-serie">VER SERIE <i class="fas fa-play"></i></button>
+        </div>
+        <div class="serie-card" data-categoria="series" onclick="abrirModal('breakingbad')">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ozqHZtRfx2xurtzmwQuYuAHaK-?cb=12&w=846&h=1254&rs=1&pid=ImgDetMain&o=7&rm=3" class="movie-poster">
+            <h3 class="movie-title">Love Death and Robots</h3>
+            <button class="boton-serie">VER SERIE <i class="fas fa-play"></i></button>
+        </div>
+    </main>
+    <!-- MODAL PARA SERIES (aparece al hacer click) -->
+    <div id="serie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo">Título de la Serie</h2>
+            <p id="modal-desc">Descripción de la serie...</p>
+            
+            <div class="temporadas">
+                <h3>Temporadas</h3>
+                <div id="temporadas-botones"></div>
+            </div>
+            
+            <div class="capitulos">
+                <h3>Los Elegidos</h3>
+                <div id="capitulos-lista"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
