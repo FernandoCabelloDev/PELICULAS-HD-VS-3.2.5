@@ -1,0 +1,267 @@
+/* Variables de color (reutilizables) */
+:root {
+    --color-fondo: #0f111a;
+    --color-tarjeta: #1f2230;
+    --color-boton: #e50914;
+    --color-texto: #f0f0f5;
+    --color-series: #9b1b1b; /* Color especial para series */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Header */
+.titulo-pagina {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== FILTROS MÁS GRANDES ===== */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filtro-btn {
+    background: var(--color-tarjeta);
+    border: none;
+    color: var(--color-texto);
+    padding: 18px 25px; /* Más grande para TV */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.2rem; /* Texto más grande */
+    font-weight: bold;
+    min-width: 220px; /* Ancho mínimo para uniformidad */
+    text-align: center;
+}
+
+.filtro-btn:hover, .filtro-btn.activo {
+    background: var(--color-boton);
+    transform: translateY(-2px);
+}
+
+/* Contenedor de películas */
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+/* ===== TARJETAS ===== */
+.movie-card, .serie-card {
+    background: var(--color-tarjeta);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover, .serie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo especial para series */
+.serie-card {
+    border: 3px solid var(--color-series);
+    position: relative;
+    cursor: pointer; /* Manita al pasar sobre series */
+}
+
+.serie-card::before {
+    content: "SERIE";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--color-series);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--color-boton);
+}
+
+.movie-title {
+    font-size: 1.1rem;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Botones */
+.boton {
+    display: block;
+    background: var(--color-boton);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background: #f40612;
+    letter-spacing: 1px;
+}
+
+/* Botón especial para series */
+.boton-serie {
+    display: block;
+    background: var(--color-series);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: none;
+    width: calc(100% - 20px);
+    cursor: pointer;
+}
+
+.boton-serie:hover {
+    background: #ff5252;
+    letter-spacing: 1px;
+}
+
+/* ===== MODAL SERIES ===== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--color-tarjeta);
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-texto);
+}
+
+.close:hover {
+    color: var(--color-boton);
+}
+
+#modal-titulo {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--color-series);
+}
+
+#modal-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.temporadas {
+    margin-bottom: 25px;
+}
+
+.temporadas h3, .capitulos h3 {
+    margin-bottom: 15px;
+    color: var(--color-boton);
+}
+
+/* Botones de temporadas */
+.temp-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.temp-btn:hover, .temp-btn.activo {
+    background: var(--color-series);
+    transform: translateY(-2px);
+}
+
+/* Lista de capítulos */
+.capitulo-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-series);
+}
+
+.capitulo-item h4 {
+    color: var(--color-series);
+    margin-bottom: 5px;
+}
+
+.capitulo-item p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .peliculas {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .filtro-btn {
+        min-width: 180px;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        padding: 20px;
+        width: 95%;
+    }
+}
